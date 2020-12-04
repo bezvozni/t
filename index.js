@@ -4,10 +4,6 @@
  * @param {!express:Request} req HTTP request context.
  * @param {!express:Response} res HTTP response context.
  */
-
-exports.helloWorld = (req, res) => {
-	
-	
 	const Discord = require('discord.js')
 	const bot = new Discord.Client()
 	const config = require('./botconfig.json')
@@ -53,5 +49,3 @@ exports.helloWorld = (req, res) => {
 
 
 	bot.login(token);
-	
-};
